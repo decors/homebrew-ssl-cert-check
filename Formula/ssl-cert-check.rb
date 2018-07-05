@@ -16,6 +16,6 @@ class SslCertCheck < Formula
   end
 
   test do
-    system bin/"ssl-cert-check", "/usr/local/etc/openssl/"
+    system bin/"ssl-cert-check", "-d", "/usr/local/etc/openssl/*.pem"
   end
 end
